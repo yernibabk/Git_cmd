@@ -1,0 +1,57 @@
+(master)
+$ git log --oneline --graph --all --decorate
+
+
+$ git merge develop
+
+
+
+
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/develop
+  remotes/origin/master
+
+$ git checkout develop
+
+
+
+$ git pull
+
+
+
+$ git branch -a
+* develop
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/develop
+  remotes/origin/master
+
+
+$ git checkout master
+
+
+$ git merge develop
+
+
+$ git log --oneline --graph --all --decorate
+* 54a3c42 (HEAD -> master, origin/develop, develop) Fix health checking
+
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+
+$ git log
+
+$ git log --oneline --graph --decorate --all
+* 54a3c42 (HEAD -> master, origin/develop, develop) Fix health checking
+
+
+$ git push
+
