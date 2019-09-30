@@ -55,3 +55,8 @@ $ git log --oneline --graph --decorate --all
 
 $ git push
 
+
+To check the log status:  git log --oneline
+To rest commit this commit_number level: git reset --hard 2330431fa448ebc499a962072609625a9cb214f4
+To revert local chanes: git reset --hard HEAD
+
